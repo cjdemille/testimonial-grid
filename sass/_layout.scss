@@ -1,0 +1,38 @@
+.testimonial-grid {
+    width: 90%;
+    margin: 7rem 0;
+    // display: grid;
+    // grid-template-columns: 1fr;
+
+
+    @media screen and (min-width: 1000px) {
+        margin: 0;
+        max-width: 111rem;
+        max-height: 57rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'daniel daniel  jonathan kira'
+            'jeanette patrick patrick kira';
+    }
+}
+
+.footer {
+    font-size: 2rem;
+    text-align: center;
+    color: $color-blackish-blue;
+    margin-top: 4rem;
+
+    a:link,
+    a:visited {
+        color: $color-violet;
+        text-decoration: none;
+        transition: all .2s;
+    }
+
+    a:hover {
+        color: $color-grayish-blue;
+    }
+}

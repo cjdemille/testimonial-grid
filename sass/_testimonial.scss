@@ -1,0 +1,90 @@
+.testimonial {
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 3px 5px rgba($color-blackish-blue, .2);
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: 1000px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__attribution {
+        font-weight: 500;
+        display: flex;
+        margin-bottom: 2rem;
+
+
+    }
+
+    &__img {
+        border-radius: 50%;
+        height: 2.8rem;
+        width: 2.8rem;
+        margin-right: 1rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: 1.3rem;
+    }
+
+    &__verified {
+        font-size: 1.1rem;
+        color: inherit;
+        opacity: .5;
+    }
+
+    &__pullquote {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: inherit;
+        opacity: .7;
+
+    }
+
+    &--dark {
+        color: $color-light-grayish-blue;
+    }
+
+    &--light {
+        color: $color-blackish-blue;
+        background-color: #fff;
+    }
+
+    &--1 {
+        background-color: $color-violet;
+        grid-area: daniel;
+    }
+
+    &--2 {
+        background-color: $color-grayish-blue;
+        grid-area: jonathan;
+    }
+
+    &--3 {
+        grid-area: jeanette;
+    }
+
+    &--4 {
+        background-color: $color-blackish-blue;
+        grid-area: patrick;
+    }
+
+    &--5 {
+        grid-area: kira;
+    }
+}
